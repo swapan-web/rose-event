@@ -398,7 +398,7 @@ img {
     height: 100%;
   }
   .event-location-text {
-    padding-bottom: 0px;
+    padding: 20px;
   }
   .containerc {
     width: 360px;
@@ -422,7 +422,7 @@ img {
     height: 100%;
   }
   .event-location-text {
-    padding-bottom: 0px;
+    padding: 20px;
   }
   .containerc {
     width: 360px;
@@ -470,7 +470,7 @@ img {
     max-width: 100%;
   }
   .event-location-text {
-    padding-bottom: 0px;
+    padding: 20px;
   }
   .team img {
     width: 70%;
