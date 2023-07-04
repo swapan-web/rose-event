@@ -412,6 +412,11 @@ img {
   .chair {
     margin-bottom: 40px;
   }
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 @media (max-width: 820px) {
   .carousel_img {
