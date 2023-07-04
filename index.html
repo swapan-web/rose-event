@@ -23,6 +23,7 @@
     <script type="text/javascript" src="js/email.js"></script>
   </head>
   <body id="home">
+    <!-- Head Content -->
     <header class="hero">
       <div id="navbar" class="navbar top">
         <h1 class="logo"><span class="text-primary">ROSE</span>EVENT</h1>
@@ -55,6 +56,7 @@
       <div id="content" class="count-emoji"></div>
     </div>
     <main>
+      <!-- Gallery -->
       <section id="gallery" class="cases flex-grid section-padding">
         <header class="section-header">
           <h4>Our best captures</h4>
@@ -135,7 +137,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Card -->
       <section class="containerc">
         <h2>We Offer Best Prices</h2>
         <div class="grid-3-cols">
@@ -398,11 +400,10 @@
           </figure>
         </div>
       </section>
-
+      <!-- Carousel -->
       <div class="event-location-text">
         <div>Our Event Locations</div>
       </div>
-
       <div class="carousel">
         <div class="carousel_inner">
           <div class="carousel_item carousel_item__active">
@@ -556,46 +557,9 @@
         data-show-facepile="false"
       ></div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const navbar = document.getElementById("navbar");
-      let scrolled = false;
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove("top");
-          if (!scrolled) {
-            navbar.style.transform = "translateY(-70px)";
-            setTimeout(() => {
-              navbar.style.transform = "translateY(0)";
-              scrolled = true;
-            }, 200);
-          }
-        } else {
-          navbar.classList.add("top");
-          scrolled = false;
-        }
-      };
-      //<!-- smooth scroll -->
-      $("#navbar a, .btn").on("click", function (e) {
-        if (this.hash !== "") {
-          e.preventDefault();
-          const hash = this.hash;
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
-      });
-    </script>
   </body>
   <div id="fb-root"></div>
+  <script src="js/main.js"></script>
   <script
     async
     defer
@@ -603,9 +567,6 @@
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
     nonce="CuKelBje"
   ></script>
-  <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
   <script src="js/script.js"></script>
   <script src="js/count.js"></script>
   <script
